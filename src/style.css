@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  background-color: rgb(9, 9, 11);
+}
+
+#app {
+  height: 100%;
+  width: 658px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
+  padding-left: 8px;
+  padding-right: 8px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+#rom-selector {
+  height: 32px;
+  width: 320px;
+  align-self: flex-start;
+  border-radius: 6px;
+  color: white;
+  background-color: rgb(9, 9, 11);
+  border: 1px solid;
+  border-color: rgb(39, 39, 42);
+}
+
+#rom-selector:focus {
+  box-shadow:
+    rgb(9, 9, 11) 0px 0px 0px 2px,
+    rgb(212, 212, 216) 0px 0px 0px 4px,
+    rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+}
+
+#canvas {
+  border: 1px solid;
+  border-color: rgb(39, 39, 42);
+  border-radius: 6px;
+}
