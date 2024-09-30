@@ -154,7 +154,7 @@ export class CPU {
       case 0xb000:
         return this.instructions.JP_V0_nnn(nnn)
       case 0xc000:
-        return this.instructions.RND_Vx_kk(x)
+        return this.instructions.RND_Vx_kk(x, kk)
       case 0xd000:
         return this.instructions.DRW_Vx_Vy_n(x, y, n)
       case 0xe000:

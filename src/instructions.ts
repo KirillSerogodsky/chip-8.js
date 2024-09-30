@@ -63,9 +63,9 @@ export class Instructions {
     }
   }
 
-  public RND_Vx_kk(x: number) {
+  public RND_Vx_kk(x: number, kk: number) {
     return () => {
-      this.cpu.V[x] = Math.floor(Math.random() * this.cpu.V[x])
+      this.cpu.V[x] = Math.floor(Math.random() * 0xff) & kk
       this.cpu.PC += 2
     }
   }
