@@ -32,7 +32,51 @@
     "url": "/roms/test/8-scrolling.ch8"
   },
   {
+    "name": "BLINKY",
+    "url": "/roms/games/BLINKY.ch8"
+  },
+  {
+    "name": "BLITZ",
+    "url": "/roms/games/BLITZ.ch8"
+  },
+  {
+    "name": "CONNECT4",
+    "url": "/roms/games/CONNECT4.ch8"
+  },
+  {
+    "name": "INVADERS",
+    "url": "/roms/games/INVADERS.ch8"
+  },
+  {
+    "name": "LANDING",
+    "url": "/roms/games/LANDING.ch8"
+  },
+  {
+    "name": "MAZE",
+    "url": "/roms/games/MAZE.ch8"
+  },
+  {
     "name": "PONG",
     "url": "/roms/games/PONG.ch8"
+  },
+  {
+    "name": "SPACE",
+    "url": "/roms/games/SPACE.ch8"
+  },
+  {
+    "name": "TANK",
+    "url": "/roms/games/TANK.ch8"
+  },
+  {
+    "name": "TETRIS",
+    "url": "/roms/games/TETRIS.ch8"
+  },
+  {
+    "name": "TICTACTOE",
+    "url": "/roms/games/TICTACTOE.ch8"
+  },
+  {
+    "name": "WALL",
+    "url": "/roms/games/WALL.ch8"
   }
 ]
