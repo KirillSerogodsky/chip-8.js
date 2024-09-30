@@ -9,7 +9,7 @@ export class CPU {
   public PC = 0x200
   public I = 0
   public V = new Uint8Array(16)
-  public S = new Array()
+  public S = new Uint16Array(16)
   public SP = 0
   public ST = 0
   public DT = 0

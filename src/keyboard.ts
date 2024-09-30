@@ -1,5 +1,5 @@
 export class Keyboard {
-  private KEY_MAP: Record<string, number> = {
+  private readonly KEY_MAP: Record<string, number> = {
     KeyX: 0x0,
     Digit1: 0x1,
     Digit2: 0x2,
@@ -32,6 +32,7 @@ export class Keyboard {
 
       if (this.nextKeyPressed) {
         this.nextKeyPressed(key)
+        this.nextKeyPressed = undefined
       }
     }
   }

@@ -73,17 +73,17 @@ export class Instructions {
   public DRW_Vx_Vy_n(x: number, y: number, n: number) {
     return () => {
       this.cpu.V[0xf] = 0
-      for (let h = 0; h < n; h++) {
-        const cell = this.cpu.memory.read(this.cpu.I + h)
-        for (let v = 0; v < 8; v++) {
-          const value = cell & (1 << (7 - v)) ? 1 : 0
-          const collision = this.cpu.screen.setPixel(
-            this.cpu.V[x] + v,
-            this.cpu.V[y] + h,
-            value,
-          )
-          if (collision) {
-            this.cpu.V[0xf] = 1
+      for (let row = 0; row < n; ++row) {
+        const spriteRow = this.cpu.memory.read(this.cpu.I + row)
+        for (let bit = 0; bit < 8; ++bit) {
+          if (spriteRow & (0b10000000 >> bit)) {
+            const collision = this.cpu.screen.setPixel(
+              (this.cpu.V[x] + bit) % 64,
+              (this.cpu.V[y] + row) % 32,
+            )
+            if (collision) {
+              this.cpu.V[0xf] = 1
+            }
           }
         }
       }
