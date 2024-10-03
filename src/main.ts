@@ -8,9 +8,7 @@ canvas.id = "canvas"
 canvas.width = 640
 canvas.height = 320
 
-const chip8 = new Chip8({
-  canvas,
-})
+const chip8 = new Chip8(canvas)
 
 const roms = await fetch("/roms/roms.json").then((res) => res.json())
 const select = document.createElement("select")

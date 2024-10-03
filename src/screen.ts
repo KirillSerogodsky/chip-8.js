@@ -3,12 +3,15 @@ export class Screen {
   private readonly SPRITE_COLOR = "white"
   private readonly HEIGHT = 32
   private readonly WIDTH = 64
-  private readonly SCALE = 10
+  private W_SCALE: number
+  private H_SCALE: number
   private readonly context: CanvasRenderingContext2D
   private readonly framebuffer = new Uint8Array(this.WIDTH * this.HEIGHT)
 
-  constructor(params: { canvas: HTMLCanvasElement }) {
-    this.context = params.canvas.getContext("2d")!
+  constructor(canvas: HTMLCanvasElement) {
+    this.W_SCALE = canvas.width / this.WIDTH
+    this.H_SCALE = canvas.height / this.HEIGHT
+    this.context = canvas.getContext("2d")!
   }
 
   public setPixel = (x: number, y: number) => {
@@ -27,8 +30,8 @@ export class Screen {
     this.context.fillRect(
       0,
       0,
-      this.WIDTH * this.SCALE,
-      this.HEIGHT * this.SCALE,
+      this.WIDTH * this.W_SCALE,
+      this.HEIGHT * this.H_SCALE,
     )
   }
 
@@ -39,10 +42,10 @@ export class Screen {
         if (this.framebuffer[x + y * this.WIDTH]) {
           this.context.fillStyle = this.SPRITE_COLOR
           this.context.fillRect(
-            x * this.SCALE,
-            y * this.SCALE,
-            this.SCALE,
-            this.SCALE,
+            x * this.W_SCALE,
+            y * this.H_SCALE,
+            this.W_SCALE,
+            this.H_SCALE,
           )
         }
       }

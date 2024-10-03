@@ -3,10 +3,8 @@ import { CPU } from "./cpu"
 export default class Chip8 {
   private cpu: CPU
 
-  constructor(params: { canvas: HTMLCanvasElement }) {
-    this.cpu = new CPU({
-      canvas: params.canvas,
-    })
+  constructor(canvas: HTMLCanvasElement) {
+    this.cpu = new CPU(canvas)
   }
 
   public async loadRomFromUrl(url: string) {

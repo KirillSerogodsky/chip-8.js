@@ -22,9 +22,13 @@ export class Instructions {
 
   public RET() {
     return () => {
-      this.cpu.PC = this.cpu.S[this.cpu.SP - 1]
-      this.cpu.S[this.cpu.SP - 1] = 0
+      if (this.cpu.SP === 0) {
+        throw new Error("Stack underflow")
+      }
       this.cpu.SP--
+      this.cpu.PC = this.cpu.S[this.cpu.SP]
+      this.cpu.S[this.cpu.SP] = 0
+      this.cpu.PC += 2
     }
   }
 
@@ -36,7 +40,10 @@ export class Instructions {
 
   public CALL_nnn(nnn: number) {
     return () => {
-      this.cpu.S[this.cpu.SP] = this.cpu.PC + 2
+      if (this.cpu.SP === 15) {
+        throw new Error("Stack overflow")
+      }
+      this.cpu.S[this.cpu.SP] = this.cpu.PC
       this.cpu.SP++
       this.cpu.PC = nnn
     }

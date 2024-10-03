@@ -13,19 +13,16 @@ export class CPU {
   public SP = 0
   public ST = 0
   public DT = 0
-  public halted = true
   public instructions: Instructions
   public memory = new Memory()
   public screen: Screen
   public sound = new Sound()
   public keyboard = new Keyboard()
-
+  public halted = true
   private timeoutHandle?: number
 
-  constructor(params: { canvas: HTMLCanvasElement }) {
-    this.screen = new Screen({
-      canvas: params.canvas,
-    })
+  constructor(canvas: HTMLCanvasElement) {
+    this.screen = new Screen(canvas)
     this.instructions = new Instructions(this)
   }
 
