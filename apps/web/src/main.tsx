@@ -1,4 +1,4 @@
-import Chip8 from "chip-8.js"
+/* import Chip8 from "chip-8.js"
 import "./style.css"
 
 const app = document.querySelector<HTMLDivElement>("#app")!
@@ -37,4 +37,15 @@ select.addEventListener("change", (e) => {
 })
 
 app.appendChild(select)
-app.appendChild(canvas)
+app.appendChild(canvas) */
+
+import { StrictMode } from "react"
+import { createRoot } from "react-dom/client"
+import App from "./app"
+import "./index.css"
+
+createRoot(document.getElementById("root")!).render(
+  <StrictMode>
+    <App />
+  </StrictMode>,
+)

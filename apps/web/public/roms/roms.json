@@ -1,82 +1,92 @@
 [
   {
-    "name": "1-chip8-logo",
-    "url": "./roms/test/1-chip8-logo.ch8"
+    "name": "Tests",
+    "children": [
+      {
+        "name": "1-chip8-logo",
+        "url": "./roms/test/1-chip8-logo.ch8"
+      },
+      {
+        "name": "2-ibm-logo",
+        "url": "./roms/test/2-ibm-logo.ch8"
+      },
+      {
+        "name": "3-corax+",
+        "url": "./roms/test/3-corax+.ch8"
+      },
+      {
+        "name": "4-flags",
+        "url": "./roms/test/4-flags.ch8"
+      },
+      {
+        "name": "5-quirks",
+        "url": "./roms/test/5-quirks.ch8"
+      },
+      {
+        "name": "6-keypad",
+        "url": "./roms/test/6-keypad.ch8"
+      },
+      {
+        "name": "7-beep",
+        "url": "./roms/test/7-beep.ch8"
+      },
+      {
+        "name": "8-scrolling",
+        "url": "./roms/test/8-scrolling.ch8"
+      }
+    ]
   },
   {
-    "name": "2-ibm-logo",
-    "url": "./roms/test/2-ibm-logo.ch8"
-  },
-  {
-    "name": "3-corax+",
-    "url": "./roms/test/3-corax+.ch8"
-  },
-  {
-    "name": "4-flags",
-    "url": "./roms/test/4-flags.ch8"
-  },
-  {
-    "name": "5-quirks",
-    "url": "./roms/test/5-quirks.ch8"
-  },
-  {
-    "name": "6-keypad",
-    "url": "./roms/test/6-keypad.ch8"
-  },
-  {
-    "name": "7-beep",
-    "url": "./roms/test/7-beep.ch8"
-  },
-  {
-    "name": "8-scrolling",
-    "url": "./roms/test/8-scrolling.ch8"
-  },
-  {
-    "name": "BLINKY",
-    "url": "./roms/games/BLINKY.ch8"
-  },
-  {
-    "name": "BLITZ",
-    "url": "./roms/games/BLITZ.ch8"
-  },
-  {
-    "name": "CONNECT4",
-    "url": "./roms/games/CONNECT4.ch8"
-  },
-  {
-    "name": "INVADERS",
-    "url": "./roms/games/INVADERS.ch8"
-  },
-  {
-    "name": "LANDING",
-    "url": "./roms/games/LANDING.ch8"
-  },
-  {
-    "name": "MAZE",
-    "url": "./roms/games/MAZE.ch8"
-  },
-  {
-    "name": "PONG",
-    "url": "./roms/games/PONG.ch8"
-  },
-  {
-    "name": "SPACE",
-    "url": "./roms/games/SPACE.ch8"
-  },
-  {
-    "name": "TANK",
-    "url": "./roms/games/TANK.ch8"
-  },
-  {
-    "name": "TETRIS",
-    "url": "./roms/games/TETRIS.ch8"
-  },
-  {
-    "name": "TICTACTOE",
-    "url": "./roms/games/TICTACTOE.ch8"
-  },
-  {
-    "name": "WALL",
-    "url": "./roms/games/WALL.ch8"
+    "name": "Games",
+    "children": [
+      {
+        "name": "BLINKY",
+        "url": "./roms/games/BLINKY.ch8"
+      },
+      {
+        "name": "BLITZ",
+        "url": "./roms/games/BLITZ.ch8"
+      },
+      {
+        "name": "CONNECT4",
+        "url": "./roms/games/CONNECT4.ch8"
+      },
+      {
+        "name": "INVADERS",
+        "url": "./roms/games/INVADERS.ch8"
+      },
+      {
+        "name": "LANDING",
+        "url": "./roms/games/LANDING.ch8"
+      },
+      {
+        "name": "MAZE",
+        "url": "./roms/games/MAZE.ch8"
+      },
+      {
+        "name": "PONG",
+        "url": "./roms/games/PONG.ch8"
+      },
+      {
+        "name": "SPACE",
+        "url": "./roms/games/SPACE.ch8"
+      },
+      {
+        "name": "TANK",
+        "url": "./roms/games/TANK.ch8"
+      },
+      {
+        "name": "TETRIS",
+        "url": "./roms/games/TETRIS.ch8"
+      },
+      {
+        "name": "TICTACTOE",
+        "url": "./roms/games/TICTACTOE.ch8"
+      },
+      {
+        "name": "WALL",
+        "url": "./roms/games/WALL.ch8"
+      }
+    ]
   }
 ]
