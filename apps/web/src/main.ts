@@ -1,4 +1,4 @@
-import Chip8 from "./chip8"
+import Chip8 from "chip-8.js"
 import "./style.css"
 
 const app = document.querySelector<HTMLDivElement>("#app")!

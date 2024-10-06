@@ -1,0 +1,16 @@
+{
+  "name": "chip-8.js",
+  "private": false,
+  "version": "0.0.0",
+  "type": "module",
+  "sideEffects": false,
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "dev": "tsup --watch",
+    "build": "tsup"
+  },
+  "devDependencies": {
+    "tsup": "^8.3.0"
+  }
+}
